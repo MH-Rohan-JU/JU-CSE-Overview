@@ -41,4 +41,5 @@ darkMode.addEventListener('click', () => {
     document.querySelector('.texten').classList.toggle('white');
     document.querySelector('.jucse').classList.toggle('white');
     document.querySelector('.intro').classList.toggle('aqua');
+    document.querySelector('.card-text').classList.toggle('white');
 });
