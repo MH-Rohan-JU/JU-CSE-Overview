@@ -8,7 +8,7 @@
     background-image: linear-gradient(rgb(7, 89, 143), rgb(71, 125, 243));
 }
 .dark-mode {
-    background-color: rgb(0 0 0 / 0.0);
+    background-color: rgb(0 0 0 / 0);
     border: none;
 }
 .btns {
@@ -49,6 +49,7 @@
 .jucse {
     font-family: "Cinzel Decorative", serif;
     padding: 20px;
+    animation: typewriter 2s steps(20, end) forwards;
 }
 .intro {
     font-family: "Saira", sans-serif;
@@ -63,10 +64,10 @@
 .hidden {
     display: none;
 }
-.white{
+.white {
     color: white;
 }
-.aqua{
+.aqua {
     color: aqua;
 }
 .foot {
@@ -76,7 +77,12 @@
     );
 }
 
-@media only screen and (max-width: 490px) {
+@media only screen and (max-width: 980px) {
+.intro{
+    font-size: small;
+}
+}
+@media only screen and (max-width: 600px) {
     .identity {
         justify-content: center;
     }
@@ -84,6 +90,7 @@
         padding-top: 0;
         padding-bottom: 0;
         text-align: center;
+        width: 90vw;
     }
     .intro {
         padding-top: 0;

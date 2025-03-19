@@ -1,5 +1,6 @@
 'use strict';
 
+const animatedTitle = 'JU CSE Overview';
 const images1 = document.querySelectorAll('.cse');
 const images2 = document.querySelectorAll('.cse-3');
 const btn1 = document.querySelector('.btnimg');
@@ -8,6 +9,16 @@ const btn3 = document.querySelector('.btnimg-3');
 const btn4 = document.querySelector('.btnimg-4');
 const darkMode = document.querySelector('.dark-mode');
 const text = document.querySelectorAll('.text');
+
+let i = 0;
+function typewriter() {
+    if (i < animatedTitle.length) {
+        document.querySelector('.jucse').innerHTML += animatedTitle.charAt(i);
+        i++;
+        setTimeout(typewriter, 80);
+    }
+}
+typewriter();
 
 btn1.addEventListener('click', () => {
     images1.forEach((imgs) => {
