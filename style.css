@@ -78,9 +78,9 @@
 }
 
 @media only screen and (max-width: 980px) {
-.intro{
-    font-size: small;
-}
+    .intro {
+        font-size: small;
+    }
 }
 @media only screen and (max-width: 600px) {
     .identity {
