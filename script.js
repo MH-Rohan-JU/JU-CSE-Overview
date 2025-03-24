@@ -9,6 +9,9 @@ const btn3 = document.querySelector('.btnimg-3');
 const btn4 = document.querySelector('.btnimg-4');
 const darkMode = document.querySelector('.dark-mode');
 const text = document.querySelectorAll('.text');
+const readMore = document.querySelector('.read-more');
+const infrastructure =
+    '<br><br>আমাদের যে ৩ টি ল্যাব আছে, প্রতিটি ল্যাবেই ভালো কনফিগারেশনের কম্পিউটার আছে। প্রতিটি স্টুডেন্টের ক্লাস করার জন্যে পর্যাপ্ত কম্পিউটার আছে। আর যারা পার্সোনাল কম্পিউটার এনে ক্লাস করে তাদের জন্য আলাদা বসার টেবিল আছে।';
 
 let i = 0;
 function typewriter() {
@@ -44,6 +47,11 @@ btn4.addEventListener('click', () => {
     btn4.classList.add('hidden');
 });
 
+readMore.addEventListener('click', () => {
+    readMore.insertAdjacentHTML('afterend', infrastructure);
+    readMore.classList.add('hidden');
+});
+
 darkMode.addEventListener('click', () => {
     document.querySelector('.body').classList.toggle('bg-dark');
     text.forEach((t) => {
@@ -52,5 +60,5 @@ darkMode.addEventListener('click', () => {
     document.querySelector('.texten').classList.toggle('white');
     document.querySelector('.jucse').classList.toggle('white');
     document.querySelector('.intro').classList.toggle('aqua');
-    document.querySelector('.card-text').classList.toggle('white')
+    document.querySelector('.card-text').classList.toggle('white');
 });
