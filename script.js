@@ -22,7 +22,14 @@ function typewriter() {
     }
 }
 typewriter();
-
+let t = 0;
+const counting = function () {
+    let min = String(Math.trunc(t / 60)).padStart(2, 0);
+    let sec = String(t % 60).padStart(2, 0);
+    document.querySelector('.timer').textContent = `${min}:${sec}`;
+    t++;
+};
+const timer = setInterval(counting, 1000);
 btn1.addEventListener('click', () => {
     images1.forEach((imgs) => {
         imgs.classList.remove('hidden');
@@ -61,4 +68,5 @@ darkMode.addEventListener('click', () => {
     document.querySelector('.jucse').classList.toggle('white');
     document.querySelector('.intro').classList.toggle('aqua');
     document.querySelector('.card-text').classList.toggle('white');
+    document.querySelector('.timer').classList.toggle('white');
 });
