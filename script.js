@@ -16,12 +16,13 @@ const infrastructure =
 let i = 0;
 function typewriter() {
     if (i < animatedTitle.length) {
-        document.querySelector('.jucse').innerHTML += animatedTitle.charAt(i);
+        document.querySelector('.jucse-1').innerHTML += animatedTitle.charAt(i);
         i++;
         setTimeout(typewriter, 80);
     }
 }
 typewriter();
+
 let t = 0;
 const counting = function () {
     let min = String(Math.trunc(t / 60)).padStart(2, 0);

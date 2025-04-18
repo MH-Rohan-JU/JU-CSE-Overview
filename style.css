@@ -49,10 +49,9 @@
     border-radius: 10px;
     padding: 10px;
 }
-.jucse {
+.jucse{
     font-family: "Cinzel Decorative", serif;
     padding: 20px;
-    animation: typewriter 2s steps(20, end) forwards;
 }
 .intro {
     font-family: "Saira", sans-serif;
@@ -79,7 +78,15 @@
         rgba(75, 69, 69, 0.699)
     );
 }
+.blink {
+    animation: blinker 1s linear infinite;
+}
 
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
 @media only screen and (max-width: 980px) {
     .intro {
         font-size: small;
